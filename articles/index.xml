@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Transparency.dev</title>
-    <link>https://transparency.dev/articles/</link>
+    <link>https://tracymiranda.github.io/trillian-website/articles/</link>
     <description>Recent content in Articles on Transparency.dev</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://transparency.dev/articles/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://tracymiranda.github.io/trillian-website/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tile-Based Transparency Logs</title>
-      <link>https://transparency.dev/articles/tile-based-logs/</link>
+      <link>https://tracymiranda.github.io/trillian-website/articles/tile-based-logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/articles/tile-based-logs/</guid>
+      <guid>https://tracymiranda.github.io/trillian-website/articles/tile-based-logs/</guid>
       <description>Background The TrustFabric team launched Trillian in 2016 as an implementation for verifiable logs - a tamper-evident data structure based on Merkle trees. Since then, Trillian has been adopted by, and had transformative impact on, applications like Certificate Transparency, binary transparency, and AI model transparency. Trillian provides readers with APIs to get entries from the log and request proofs from the log to verify it hasn&amp;rsquo;t been tampered with. To read more or brush up on verifiable logs, head over to the Verifiable Data Structures page.</description>
     </item>
     
     <item>
       <title>Transparency Logs: A Verifiable Transport Layer</title>
-      <link>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</link>
+      <link>https://tracymiranda.github.io/trillian-website/articles/logs-a-verifiable-transport-layer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/articles/logs-a-verifiable-transport-layer/</guid>
+      <guid>https://tracymiranda.github.io/trillian-website/articles/logs-a-verifiable-transport-layer/</guid>
       <description>Transparency logs are a powerful tool for storing information and presenting it to all users in such a way that they can all verify they see the same entries. Originally deployed for Certificate Transparency over a decade ago, logs are now being used to provide tamper evidence for other ecosystems such as binary transparency and AI model transparency. When a transparency log is used correctly in a tight feedback loop it allows for timely detection and response to malfeasance, forming an important part of security response to protect users.</description>
     </item>
     
     <item>
       <title>Transparency: An Implementer&#39;s Story</title>
-      <link>https://transparency.dev/articles/transparency-an-implementers-story/</link>
+      <link>https://tracymiranda.github.io/trillian-website/articles/transparency-an-implementers-story/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/articles/transparency-an-implementers-story/</guid>
+      <guid>https://tracymiranda.github.io/trillian-website/articles/transparency-an-implementers-story/</guid>
       <description>Aether’s team is responsible for running a binary download service. Naming is hard, so their service is simply called DownloadServer. Their service has some guarantees that the binary has not been tampered with, by validating a checksum on the client before any binaries are installed. Aether has a concern that this only mitigates some errors and threat models. If their download servers provide a different binary to some users along with a valid checksum then these clients could install malicious software without detection.</description>
     </item>
     
     <item>
       <title>Verifying Evolution of Logs vs Maps</title>
-      <link>https://transparency.dev/articles/logs-vs-maps/</link>
+      <link>https://tracymiranda.github.io/trillian-website/articles/logs-vs-maps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://transparency.dev/articles/logs-vs-maps/</guid>
+      <guid>https://tracymiranda.github.io/trillian-website/articles/logs-vs-maps/</guid>
       <description>Log Evolution Verifiable Logs represent a list which is committed to by a Checkpoint. Given a Checkpoint, a client can:
  Verify inclusion of the value at any position in the list Cheaply verify that another Checkpoint is consistent with it  If two Checkpoints are consistent then the lists they commit to are either the same, or one is a prefix of the other. If any of this doesn’t make sense then now would be a good time to review Verifiable Data Structures.</description>
     </item>

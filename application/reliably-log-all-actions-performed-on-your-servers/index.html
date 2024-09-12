@@ -42,7 +42,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.73c0a53c9dc8f7d3bcdb0bd2b26bcb8c683f2cc456bde062572da041ddd90b57.css" integrity="sha256-c8ClPJ3I99O82wvSsmvLjGg/LMRWveBiVy2gQd3ZC1c=">
+  <link rel="stylesheet" href="https://tracymiranda.github.io/trillian-website/css/styles.min.73c0a53c9dc8f7d3bcdb0bd2b26bcb8c683f2cc456bde062572da041ddd90b57.css" integrity="sha256-c8ClPJ3I99O82wvSsmvLjGg/LMRWveBiVy2gQd3ZC1c=">
     <script>
       'use strict';
 
@@ -88,23 +88,23 @@
     </div>
   </div>
   <ul class="mx-auto lg:float-left h-16 flex items-center">
-    <li class="mx-auto"><a href='/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
+    <li class="mx-auto"><a href='/trillian-website/' class="text-Grey-700" style="font-size: 22px; font-weight: normal;">Tamper-evident logs</a></li>
   </ul>
   <ul class="invisible lg:visible float-right h-16 flex items-center">
-    <li class="text-right inline mr-6"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
-    <li class="text-right inline mr-6"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
-    <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
-    <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
-    <li class="text-right inline mr-6"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+    <li class="text-right inline mr-6"><a href='/trillian-website/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+    <li class="text-right inline mr-6"><a href='/trillian-website/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+    <li class="text-right inline mr-6"><a href='/trillian-website/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+    <li class="text-right inline mr-6"><a href='/trillian-website/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+    <li class="text-right inline mr-6"><a href='/trillian-website/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
     <li class="text-right inline mr-6"><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
   </ul>
 </nav>
 <ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
-  <li class="gmb-2"><a href='/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
-  <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
-  <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
-  <li class="gmb-2"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
-  <li class="gmb-2"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class="gmb-2"><a href='/trillian-website/#applications' class="text-Grey-600 hover:no-underline">Applications</a></li>
+  <li class="gmb-2"><a href='/trillian-website/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
+  <li class="gmb-2"><a href='/trillian-website/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
+  <li class="gmb-2"><a href='/trillian-website/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
+  <li class="gmb-2"><a href='/trillian-website/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
   <li class=""><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
 </ul>
 </div>
@@ -182,7 +182,7 @@
         Reliably log all actions performed on your servers
       </h1>
       
-        <img src="/images/application-illustrations/top_log-all-commands.svg" class="gmt-4 illustration-mb w-full" />
+        <img src="/trillian-website/images/application-illustrations/top_log-all-commands.svg" class="gmt-4 illustration-mb w-full" />
       
     </div>
   </div>
@@ -226,7 +226,7 @@
 
 
 <figure>
-    <img src="/images/application-illustrations/diagram_log-all-commands.svg" />
+    <img src="/trillian-website/images/application-illustrations/diagram_log-all-commands.svg" />
 </figure>
 
 
@@ -237,7 +237,7 @@
 <li>The agent server verifies that the command has been added to the log, and simultaneously verifies the integrity of the log</li>
 <li>The agent runs the command on the server. In order for a command to run on a server, it must first appear in the log. This ensures a user cannot run a malicious command without that command being logged.</li>
 </ol>
-<p>Each agent keeps a record of previously seen <a href="/verifiable-data-structures/#tree-head-hash">tree heads</a>. If an agent finds an inconsistency with a previous tree head - implying the log has been tampered with - it stops working and raises alarms. Therefore all running agents act as a distributed network, continuously verifying the append-only nature of the log.</p>
+<p>Each agent keeps a record of previously seen <a href="/trillian-website/verifiable-data-structures/#tree-head-hash">tree heads</a>. If an agent finds an inconsistency with a previous tree head - implying the log has been tampered with - it stops working and raises alarms. Therefore all running agents act as a distributed network, continuously verifying the append-only nature of the log.</p>
 <p>The verifiability of the log makes it extremely difficult to tamper with the log to cover up the malicious command.</p>
 <h2 id="limitations">Limitations</h2>
 <p><strong>Users can still run malicious commands</strong> - the log doesn&rsquo;t know whether a command is malicious or not, it simply stores everything. However:</p>
@@ -267,7 +267,7 @@
 </ul>
 <h2 id="how-to-further-strengthen-logging">How to further strengthen logging</h2>
 <ul>
-<li>The verifiable log has a signed tree head which can be used to verify the entire data structure. The signed tree head could be regularly published online, encouraging others to store a copy of all the signed tree heads. These can be used to subsequently carry out <a href="/verifiable-data-structures/#consistency-proof">consistency proofs</a>: confirming that the log was append-only since the tree head was stored.</li>
+<li>The verifiable log has a signed tree head which can be used to verify the entire data structure. The signed tree head could be regularly published online, encouraging others to store a copy of all the signed tree heads. These can be used to subsequently carry out <a href="/trillian-website/verifiable-data-structures/#consistency-proof">consistency proofs</a>: confirming that the log was append-only since the tree head was stored.</li>
 <li>You could share the verifiable log&rsquo;s entire contents privately with a third party verifier who could monitor for suspicious commands and continuously verify the integrity of the log.</li>
 <li>You could add multi-party authentication for high risk commands. The agent component would ensure that that log received separate additional approvals before a high-risk command would be executed.</li>
 </ul>
@@ -402,13 +402,13 @@
         <h2 class="text-Grey-900">Learn more about tamper-evident logs</h2>
         <ul class="text-Grey-600">
           <li>
-            <a href='/#benefits' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
+            <a href='/trillian-website/#benefits' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Benefits of tamper-evident logs</a>
           </li>
           <li>
-            <a href='/#trillian' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
+            <a href='/trillian-website/#trillian' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Trillian: an open-source verifiable log</a>
           </li>
           <li>
-            <a href='/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
+            <a href='/trillian-website/verifiable-data-structures/' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Verifiable Data Structures</a>
           </li>
         </ul>
         </ul>
@@ -417,23 +417,23 @@
         <h2 class="text-Grey-900">Applications of tamper-evident logs</h2>
         <ul class="text-Grey-600 gmb-4">
           <li>
-            <a href='/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
+            <a href='/trillian-website/application/add-tamper-checking-to-a-package-manager' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Add tamper-checking to a package manager</a>
           </li>
           <li>
-            <a href='/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
+            <a href='/trillian-website/application/reliably-log-all-actions-performed-on-your-servers' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Reliably log all actions performed on your servers</a>
           </li>
           <li>
-            <a href='/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
+            <a href='/trillian-website/application/strengthen-discovery-of-encryption-keys' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Strengthen discovery of encryption keys with Key Transparency</a>
           </li>
           <li>
-            <a href='/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
+            <a href='/trillian-website/application/discourage-misbehaviour-by-third-parties-in-certificate-transparency' class="text-Grey-600 hover:text-Grey-900 hover:no-underline">Discourage misbehaviour by third parties in Certificate Transparency</a>
           </li>
         </ul>
       </div>
       <div class="col-span-4 sm:col-span-10 sm:col-start-2 border-t border-Grey-300 gpt-4 sm:flex">
-        <img src="/images/logos/google-logo.svg" alt="Google's Logo" />
+        <img src="/trillian-website/images/logos/google-logo.svg" alt="Google's Logo" />
         <p class="mt-6 sm:mt-0 sm:ml-16 text-sm">
-          <a href="/privacy/" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
+          <a href="/trillian-website/privacy/" class="text-Grey-600 hover:text-Grey-900 hover:no-underline">
             Privacy
           </a>
         </p>
