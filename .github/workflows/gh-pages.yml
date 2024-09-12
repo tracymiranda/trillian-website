@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Build/deploy to GH Pages
+name: Build/deploy to Tracy's GH Pages
 
 on:
   push:
@@ -58,7 +58,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        cname: transparency.dev
+        cname: tracymiranda.github.io
         github_token: ${{ secrets.GITHUB_TOKEN }}
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./public

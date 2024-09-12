@@ -13,7 +13,7 @@
 # limitations under the License.
 
 title: Transparency.dev
-baseURL: https://transparency.dev
+baseURL: https://tracymiranda.github.io/trillian-website
 disableKinds:
 - taxonomy
 - taxonomyTerm
